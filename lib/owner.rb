@@ -34,11 +34,11 @@ class Owner
   end
   
   def buy_cat(cat)
-   {|cat| cat.owner = self}
+    cat.owner = self
   end 
   
   def buy_dog(dog)
-    
+    dog.owner = self
   end 
   
   def walk_dogs
