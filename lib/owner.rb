@@ -1,5 +1,4 @@
 class Owner
-  attr_accessor :cat, :dog
   attr_reader :name, :species
   
   @@all = []
@@ -27,7 +26,7 @@ class Owner
   end
   
   def cats
-    
+    Cat.all.collect {|dog| 
   end
   
 end
