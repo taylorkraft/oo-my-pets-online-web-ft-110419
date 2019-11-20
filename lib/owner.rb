@@ -40,19 +40,18 @@ class Owner
   
   def buy_dog(name)
     dog = Dog.new(name, self)
-    dog.owner = self
   end 
   
   def walk_dogs
-    Dog.all.select {|dog| dog.mood = "happy"}
+    Dog.all.each {|dog| dog.mood = "happy"}
   end 
   
   def feed_cats 
-    Cat.all.select {|cat| cat.mood = "happy"}
+    Cat.all.each {|cat| cat.mood = "happy"}
   end 
   
   def sell_pets
-    
+    dogs.
   end 
   
   def list_pets
