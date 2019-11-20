@@ -38,6 +38,7 @@ class Owner
   end 
   
   def buy_dog(dog)
+    
   end 
   
   def walk_dogs
