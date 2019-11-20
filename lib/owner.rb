@@ -40,8 +40,8 @@ class Owner
   def buy_dog
   end 
   
-  def walk_dogs
-    Dog.each {|dog| dog.mood = "happy"}
+  def walk_dogs(dogs)
+    dogs.each {|dog| dog.mood = "happy"}
   end 
   
   def feed_cats 
