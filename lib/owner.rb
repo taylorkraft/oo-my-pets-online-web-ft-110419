@@ -1,6 +1,6 @@
 class Owner
   attr_reader :name, :species
-  
+  attr_accessor :cat, :dog
   @@all = []
   
   def initialize(name)
@@ -34,7 +34,7 @@ class Owner
   end
   
   def buy_cat(cat)
-    Cat.select {|cat| cat.owner = self}
+    Cat.all.select {|cat| cat.owner = self}
   end 
   
   def buy_dog(dog)
