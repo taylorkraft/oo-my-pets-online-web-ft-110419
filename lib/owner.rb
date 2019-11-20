@@ -41,7 +41,7 @@ class Owner
   end 
   
   def walk_dogs
-    Dog.all.select {|dog| dog.mood = "happy"}
+    dogs.all.select {|dog| dog.mood = "happy"}
   end 
   
   def feed_cats 
@@ -53,7 +53,7 @@ class Owner
   end 
   
   def list_pets
-    puts "I have"
+    
   end
   
 end
