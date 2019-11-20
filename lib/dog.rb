@@ -5,4 +5,8 @@ class Dog
     @owner = owner
   end 
   
+  def owner=(owner_name)
+    
+  end 
+  
 end
