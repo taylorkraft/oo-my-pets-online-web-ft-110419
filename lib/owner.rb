@@ -37,11 +37,11 @@ class Owner
     
   end 
   
-  def buy_dog
+  def buy_dog(dog)
   end 
   
   def walk_dogs
-    Dog.all {|dog| dog.mood == "happy"}
+    Dog.all.select {|dog| dog.mood == "happy"}
   end 
   
   def feed_cats 
