@@ -1,3 +1,8 @@
 class Owner
-  # code goes here
+  
+  def initialize
+    @owner = owner
+  end 
+  
+  def name
 end
